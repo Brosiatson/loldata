@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root{
+    --green: #00ffea;
+    --dark-blue: #0a0a33;
+    --orange: #ff3c00;
+    --gray: #888;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--dark-blue);
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: var(--green);
+    font-size: 48px;
+    padding: 48px;
+}
+
+#inputs{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+input[type=text]{
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    height: 48px;
+    padding-left: 12px;
+    width: 256px;
+}
+input[type=button]{
+    align-items: center;
+    background: var(--orange);
+    border: none;
+    color: var(--dark-blue);
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    width: 96px;
+}
+
+#banner{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+}
+.player{
+    background: var(--orange);
+    display: flex;
+    gap: 24px;
+    padding: 32px;
+    width: fit-content;
+}
+.avatar{
+    position: relative;
+}
+.avatar img{
+    border: 1px solid var(--green);
+    width: 120px;
+}
+.avatar span{
+    align-items: center;
+    background: var(--green);
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(79px) translateY(-47px);
+    width: 40px;
+}
+.banner-paragraph{
+    color: var(--green);
+    font-size: 36px;
+}
+
+#matches{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+.match{
+    align-items: center;
+    background: var(--gray);
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+    width: fit-content;
+}
+.champion{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+.champion span{
+    align-items: center;
+    background: var(--orange);
+    color: var(--dark-blue);
+    display: flex;
+    font-size: 20px;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(45px) translateY(91px);
+    width: 30px;
+}
+.champion img{
+    border: 1px solid var(--orange);
+}
+.champion-paragraph{
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 600;
+}
+.stats{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stats-paragraph{
+    color: var(--dark-blue);
+    font-size: 40px;
+    font-weight: 600;
+}
+.kda-paragraph{
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+.multikills-paragraph{
+    background: var(--orange);
+    color: var(--dark-blue);
+    font-size: 16px;
+    padding: 8px;
+}
