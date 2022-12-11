@@ -2,7 +2,7 @@ const addresses = {
     eun1: "https://eun1.api.riotgames.com",
     europe: "https://europe.api.riotgames.com"
 }
-const apiKey = "api_key=RGAPI-d7a49013-c2ee-4045-827c-e813dd25e9aa"
+const apiKey = "api_key=RGAPI-c7299743-44e8-40d3-907c-5f5a54716d4a"
 
 async function getSummonerData(summonerName) {
     const api = await fetch(`${addresses.eun1}/lol/summoner/v4/summoners/by-name/${summonerName}?${apiKey}`)
