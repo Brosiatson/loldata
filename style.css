@@ -12,6 +12,7 @@
     font-family: 'Nunito Sans';
     padding: 0;
     margin: 0;
+    outline: none;
 }
 body{
     background-color: var(--dark-blue);
@@ -81,6 +82,7 @@ input[type=button]{
 .avatar span{
     align-items: center;
     background: var(--green);
+    color: var(--dark-blue);
     display: flex;
     font-size: 20px;
     height: 40px;
@@ -108,6 +110,22 @@ input[type=button]{
     gap: 32px;
     padding: 32px;
     width: fit-content;
+}
+.type-and-time{
+    align-items: center;
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+.type-and-time span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.type-paragraph{
+    font-size: 24px;
+    font-weight: 700;
 }
 .champion{
     align-items: center;
@@ -156,4 +174,5 @@ input[type=button]{
     color: var(--dark-blue);
     font-size: 16px;
     padding: 8px;
+    margin-top: 10px;
 }
