@@ -2,7 +2,7 @@ const addresses = {
     eun1: "https://eun1.api.riotgames.com",
     europe: "https://europe.api.riotgames.com"
 }
-const apiKey = "api_key=RGAPI-5b2b08c1-0506-4424-80db-e83676ea4eae"
+const apiKey = "api_key=RGAPI-cea9e578-edb5-4fc3-ac3a-4385f070251d"
 
 async function getSummonerData(summonerName) {
     const api = await fetch(`${addresses.eun1}/lol/summoner/v4/summoners/by-name/${summonerName}?${apiKey}`)
@@ -22,5 +22,11 @@ async function getSummonerMatch(matchId) {
     return res
 }
 
-export {getSummonerData, getSummonerMatches, getSummonerMatch}
+async function getSummonerMatchTimeline(matchId) {
+    const api = await fetch(`${addresses.europe}/lol/match/v5/matches/${matchId}/timeline?${apiKey}`)
+    const res = await api.json()
+    return res
+}
+
+export {getSummonerData, getSummonerMatches, getSummonerMatch, getSummonerMatchTimeline}
 

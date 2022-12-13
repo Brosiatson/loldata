@@ -26,7 +26,7 @@ async function displayData(summonerName) {
     for (const match of summonerMatches) {
         const summonerMatch = await getSummonerMatch(match)
         console.log(summonerMatch)
-        gameIds.push(summonerMatch.info.gameId)
+        gameIds.push(summonerMatch.metadata.matchId)
 
         let index
         summonerMatch.info.participants.map((x, y) => {
